@@ -1,0 +1,51 @@
+body, html {
+  margin: 0;
+  background-color: gray;
+}
+
+body {
+  padding-left: env(safe-area-inset-left);
+  padding-right: env(safe-area-inset-right);
+}
+
+p {
+  margin: 0;
+}
+
+.content {
+  background-color: white;
+  margin: 0;
+  padding-bottom: 50px;
+}
+
+.bottomnav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  width: calc(100% - env(safe-area-inset-right) - env(safe-area-inset-left));
+  height: 50px;
+  background-color: lightblue;
+  padding: 0px;
+  padding-bottom: env(safe-area-inset-bottom);
+
+  ul {
+    margin: auto 0;
+    padding: 0;
+    height: 100%;
+    list-style-type: none;
+  }
+
+  li {
+    background-color: black;
+    float: left;
+    width: calc(100% /3);
+    height: 100%;
+    text-align: center;
+    vertical-align: middle
+  }
+
+  a {
+    color: white;
+    text-decoration: none;
+  }
+}
